@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Store</title>
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/3135/3135755.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Hachi+Maru+Pop&family=Hubballi&family=Inter:wght@300;400;500;600;700;800&family=Kalam:wght@700&family=Montserrat:wght@254&family=Open+Sans:wght@326;379&family=Permanent+Marker&family=Poppins:wght@100&family=Roboto:wght@300;400;700&family=Rubik+Glitch&display=swap');
+    </style>
+    <link rel="stylesheet" href="asset/css/base.css">
+    <link rel="stylesheet" href="asset/css/responsive.css">
+    <link rel="stylesheet" href="asset/css/book_detail.css">
+</head>
+<body>
+    <header>
+        <nav class="header-navbar">
+            <div class="logo">
+                <img src="asset/img/logo2.png" alt="Logo image" class="brand-img">
+            </div>
+            <!-- Navbar PC -->
+            <ul class="nav-pc-container">
+                <li class="nav-pc-item">
+                    <a href="index.html" class="nav-pc-item__link">Home</a>
+                </li>
+                <li class="nav-pc-item">
+                    <a href="category1.html" class="nav-pc-item__link">Science</a>
+                    <ul class="nav-pc-item__dropdown-container">
+                        <li class="nav-pc-item__dropdown-item">
+                            <a href="">Science Fiction</a>
+                        </li>
+                        <li class="nav-pc-item__dropdown-item">
+                            <a href="">Earth Science</a>
+                        </li>
+                        <li class="nav-pc-item__dropdown-item">
+                            <a href="">Undersea</a>
+                        </li>
+                        <li class="nav-pc-item__dropdown-item">
+                            <a href="">Physics</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-pc-item">
+                    <a href="category1.html" class="nav-pc-item__link">Romance</a>
+                    <ul class="nav-pc-item__dropdown-container">
+                        <li class="nav-pc-item__dropdown-item">
+                            <a href="">Contemporary</a>
+                        </li>
+                        <li class="nav-pc-item__dropdown-item">
+                            <a href="">Historical</a>
+                        </li>
+                        <li class="nav-pc-item__dropdown-item">
+                            <a href="">Paradise</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-pc-item">
+                    <a href="contact.html" class="nav-pc-item__link">Contact</a>
+                </li>
+            </ul>
+
+            <!-- Navbar mobile -->
+            <input type="checkbox" class="nav-switch-btn" id="nav-mobile-switch">
+            <label for="nav-mobile-switch" class="nav-mobile__menu-icon">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <label for="nav-mobile-switch" class="nav-overlay"></label>
+            <ul class="nav-mobile-container">
+                <li class="nav-mobile-item">
+                    <a class="nav-mobile-item__link active" href="index.html">Home</a>
+                </li>
+                <li class="nav-mobile-item">
+                    <a class="nav-mobile-item__link " href="category1.html">Science</a>
+                </li>
+                <li class="nav-mobile-item">
+                    <a class="nav-mobile-item__link " href="category1.html">Romance</a>
+                </li>
+                <li class="nav-mobile-item">
+                    <a class="nav-mobile-item__link " href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main content -->
+    <main>
+        <!-- Breadcrumb -->
+        <ul class="breadcrumb-container">
+            <li class="breadcrumb-item">
+                <a href="index.html" class="breadcrumb-item__link">Home <i class="fa-solid fa-angle-right breadcrumb-item__icon"></i></a>
+            </li>
+            <li class="breadcrumb-item">
+                <a href="category1.html" class="breadcrumb-item__link">Science Fiction <i class="fa-solid fa-angle-right breadcrumb-item__icon"></i></a>
+            </li>
+            <li class="breadcrumb-item">
+                Quantum Physics
+            </li>
+        </ul>
+        <!-- Book details -->
+        <section class="book-detail">
+            <div class="book-detail__poster">
+                <img src="asset/img/science/book12.png" alt="Book poster">
+            </div>
+            <ul class="book-detail__img-container">
+                <li class="book-detail__img-item">
+                    <img src="asset/img/science/book13.png" alt="Sample product">
+                </li>
+                <li class="book-detail__img-item">
+                    <img src="asset/img/science/book14.png" alt="Sample product">
+                </li>
+                <li class="book-detail__img-item">
+                    <img src="asset/img/science/book15.png" alt="Sample product">
+                </li>
+            </ul>
+            <div class="book-detail__purchase">
+                <p class="book-detail__purchase-price">
+                    <i class="fa-solid fa-dollar-sign"></i>
+                    20
+                </p>
+                <button class="book-detail__purchase-btn">Add to cart <i class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+
+            <h3 class="book-detail__title">Quantum Physics</h3>
+            <p class="book-detail__desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+        </section>
+    </main>
+
+    <!-- Footer section -->
+    <footer>
+        <nav class="footer-navbar">
+            <ul class="footer-navbar-container">
+                <li class="footer-navbar-item">
+                    <a href="#" class="footer-navbar-item__link">About Us</a>
+                </li>
+                <li class="footer-navbar-item">
+                    <a href="#" class="footer-navbar-item__link">Privacy</a>
+                </li>
+                <li class="footer-navbar-item">
+                    <a href="#" class="footer-navbar-item__link">Policy</a>
+                </li>
+                <li class="footer-navbar-item">
+                    <a href="#" class="footer-navbar-item__link">Terms of Use</a>
+                </li>
+                <li class="footer-navbar-item">
+                    <a href="#" class="footer-navbar-item__link">Copyright</a>
+                </li>
+                <li class="footer-navbar-item">
+                    <a href="contact.html" class="footer-navbar-item__link">Contact Us</a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>
