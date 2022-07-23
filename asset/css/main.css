@@ -1,0 +1,13 @@
+.nav-pc-item:first-child::after {
+    width: calc(100% - 48px)
+}
+
+.category:first-child {
+    padding-top: 124px;
+}
+
+@media (max-width: 960px) {  
+     .category {
+        padding: 40px;
+     }
+}
