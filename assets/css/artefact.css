@@ -1,0 +1,21 @@
+#container {
+  min-height: 100vh;
+  padding: 20px 10%;
+}
+
+.grid-layout {
+  display: flex;
+  flex-wrap: wrap;
+}
+.grid-item {
+  margin-left: 20px;
+}
+
+.grid-item {
+  font-size: 15px;
+}
+
+.grid-item iframe {
+  width: 640px;
+  height: 480px;
+}

@@ -1,0 +1,268 @@
+/* Header section */
+body {
+}
+
+
+/* Main content */
+.homepage-bg {
+    height: calc(100vh - 139px);
+    width: 100%;
+    object-fit: cover;
+}
+
+/* About section */
+
+
+.about{
+    padding: 0 10%;
+    margin-bottom: 80px;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-content-col:first-child {
+    width: 47%;
+    overflow: hidden;
+}
+
+.about-content-col:first-child img {
+    width: 100%;
+    height: 530px;
+    object-fit: cover;
+    display: block;
+    transition: 0.8s;
+}
+
+.about-content-col:first-child img:hover {
+    /* transform: scale(1.2); */
+}
+
+.about-content-col:nth-child(2) {
+    width: 23%;
+}
+
+.about-content-col:nth-child(2) iframe,
+.about-content-col:nth-child(2) img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.about-content-col:nth-child(3) {
+    width: 23%;
+    text-align: center;
+}
+
+.about-content-col:nth-child(3) img {
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.about-content-col>div {
+    text-align: center;
+    background-color: var(--dark-bg-color);
+    padding: 20px 14px;
+}
+
+.about-content-col>div>a {
+    font-size: 1.6rem;
+    color: var(--pink-text-color);
+}
+
+.about-content-col>div>a:hover {
+    opacity: 0.8;
+}
+
+.about-content-col__trip-info {
+    background-color: var(--dark-bg-color);
+    font-size: 1.6rem;
+    padding: 28px 0;
+}
+
+.about-content-col__trip-info>p {
+    color: var(--pink-text-color);
+    text-align: center;
+    font-weight: 600;
+    padding: 0 0 16px;
+}
+
+.about-content-col__trip-info>div {
+    padding: 0 28px 12px;
+    color: white;
+    font-size: 1.4rem;
+    text-align: initial;
+    line-height: 2.4rem;
+}
+
+.about-content-col__trip-info>div i {
+    width: 20px;
+    font-size: 1.8rem;
+}
+
+.book_btn2 {
+    border: none;
+    outline: none;
+    padding: 12px 24px;
+    background-color: var(--pink-text-color);
+    border-radius: 6px;
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.book_btn2:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+/* Exhibition section */
+.exhibition {
+    padding: 0 10% 60px;
+    background-color: var(--dark-bg-color);
+}
+
+.exhibition .heading {
+    color: white;
+}
+
+.exhibition-container {
+    display: inline-block;
+    display: flex;
+    justify-content: space-between;
+}
+
+.exhibition-item {
+    width: 25%;
+    font-size: 1.6rem;
+}
+
+.exhibition-item>a {
+    width: 100%;
+    height: 182px;
+    overflow: hidden;
+    display: block;
+}
+
+.exhibition-item img {
+    width: 100%;
+    height: 182px;
+    object-fit: cover;
+    margin-bottom: 16px;
+    transition: 0.8s;
+}
+
+.exhibition-item img:hover {
+    transform: scale(1.2);
+}
+
+.exhibition-category {
+    color: var(--pink-text-color);
+}
+
+.exhibition-item__date {
+    color: var(--gray-text-color);
+    font-weight: 600;
+}
+
+.exhibition-item__title {
+    color: white;
+    line-height: 2.4rem;
+}
+.exhibition-item__title:hover {
+    cursor: pointer;
+    color: var(--pink-text-color)
+}
+
+
+/* Educational activities */
+.education-content {
+    padding: 0 20% 90px;
+}
+
+.education-content-container {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    position: relative;
+}
+
+.education-content-container i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.8rem;
+    background-color: var(--dark-bg-color);
+    color: white;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    opacity: 0.7;
+    transition: 0.2s;
+    z-index: -100;
+}
+
+.education-content-container i:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.angle-left-icon {
+    left: -14%;
+}
+
+.angle-right-icon {
+    right: -14%;
+}
+
+.education-content-item {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.6rem;
+    z-index: -100;
+}
+.education-content-item a {
+    width: 47%;
+    overflow: hidden;
+}
+
+.education-content-item a img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: 0.8s;
+}
+
+.education-content-item a img:hover {
+    transform: scale(1.2);
+    
+}
+
+.education-content-item>div {
+    width: 47%;
+}
+
+.education-content-item__date {
+    color: gray;
+    font-weight: 600;
+}
+
+.education-content-item__title {
+    font-size: 1.8rem;
+    color: var(--dark-bg-color);
+    font-weight: 600;
+}
+
+.education-content-item__desc {
+    line-height: 2.4rem;
+    text-align: justify;
+}
+
+.education-content-item__title:hover {
+    color: var(--pink-text-color)
+}

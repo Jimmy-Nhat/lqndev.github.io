@@ -1,0 +1,505 @@
+:root{
+    --gray-text-color: #9c9699;
+    --pink-text-color: #d99578;
+    --dark-bg-color: #302e2f;
+}
+
+*{ box-sizing: inherit }
+
+html { 
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #f3f8ff;
+    scroll-behavior: smooth;
+    /* white-space: nowrap; */
+    text-overflow: ellipsis
+}
+
+main {
+    /* background-color: #f1f1f1; */
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Nav bar */
+
+header {
+    background-color: var(--dark-bg-color);
+    padding: 0 10%;
+    height: 139px;
+}
+
+.header-intro {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    border-bottom: 0.4px solid rgb(93, 91, 91);
+}
+
+/* Header left corner */
+
+.header--left {
+    font-size: 1.5rem;
+}
+.header--left__plan {
+    display: inline-block;
+}
+
+.header--left__plan i {
+    display: inline-block;
+    color: var(--pink-text-color);
+    padding-right: 6px;
+}
+
+.header--left__plan p {
+    display: inline-block;
+    color: var(--gray-text-color);
+    padding-right: 10px;
+    border-right: 1px solid var(--gray-text-color);
+    line-height: 2rem;
+}
+
+.header--left__direction {
+    display: inline-block;
+}
+
+.header--left__direction i {
+    color: var(--pink-text-color);
+    padding: 0 6px 0 10px;
+}
+
+.header--left__direction a {
+    color: var(--gray-text-color)
+}
+
+.header--left__direction a:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+
+/* Header right corner */
+.header--right {
+}
+
+.header--right i:nth-child(4) {
+    padding-right: 10px;
+    border-right: 1px solid var(--gray-text-color);
+}
+
+.header--right i:nth-child(5) {
+    margin-left: 10px;
+}
+
+.header--right i {
+    font-size: 1.8rem;
+    color: var(--gray-text-color);
+    padding: 4px;
+}
+
+.header--right i:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.search-icon {
+    display: inline-block;
+    border-radius: 6px;
+    border: 0.8px solid var(--gray-text-color);
+    margin-right: 16px;
+}
+
+.header--right button {
+    padding: 8px 16px;
+    background-color: var(--pink-text-color);
+    border-radius: 6px;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 550;
+    border: none;
+    outline: none;
+}
+.header--right button:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+/* Header content */
+.header-content {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-content__brand {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-content__brand img {
+    width: 100px;
+    height: 30px;
+    object-fit: cover;
+    transform: scale(1.2)
+}
+
+.header-content__brand div {
+    margin-left: 28px;
+}
+
+.header-content__brand p{
+    color: white;
+    font-size: 1.8rem;
+    margin: 0; 
+}
+
+.header-content__brand p:first-child {
+}
+.header-content__brand p:nth-child(2) {
+}
+
+/* Navbar */
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: bottom;
+    height: 100%
+}
+
+.nav-item {
+    margin-left: 36px;
+    flex-grow: 1;
+    margin-top: auto;
+}
+
+.nav-item__link {
+    color: white;
+    font-size: 1.6rem;
+
+}
+
+.nav-item__link:hover {
+    color: var(--pink-text-color);
+}
+
+/* Main content 's components */
+section {
+}
+
+.section-title {
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-align: center;
+    padding: 60px 0 40px;
+}
+
+.sub-heading {
+    display: inline-block;
+    font-size: 1.6rem;
+    color: var(--gray-text-color);
+    font-weight: 600;
+    position: relative;
+}
+
+.sub-heading::before {
+    width: 80px;
+    position: absolute;
+    left: 50%;
+    top: -20px;
+    transform: translateX(-50%);
+    background-color: var(--pink-text-color);
+    height: 4px;
+    content: "";
+}
+
+.heading {
+    font-size: 2rem;
+}
+
+article {
+    padding: 0 10% 60px;
+}
+
+.article-title {
+    padding-top: 10px;
+    color: var(--dark-bg-color);
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    text-transform: uppercase;
+}
+
+.article-publish-date {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.article-content {}
+
+.article-content p {
+    font-size: 1.4rem;
+    line-height: 2.6rem;
+    text-align: justify;
+    font-weight: 400;
+}
+
+.breadcrumb {
+    background-color: #6c6c6c26;
+    font-size: 1.6rem;
+    color: var(--pink-text-color);
+    padding: 12px 12px;
+    font-weight: 600;
+}
+
+.breadcrumb a {
+    color: gray;
+    font-weight: 600;
+}
+
+.breadcrumb a:hover {
+    color: #c77a59;
+}
+
+.breadcrumb span {
+    color: var(--dark-bg-color);
+    font-weight: 600;
+}
+
+/* Footer section */
+footer {
+    background-image: url('http://st.ourhtmldemo.com/new/egypt/images/resources/footer-bg-1-1.jpg');
+    background-color: var(--dark-bg-color);
+    text-align: center;
+    padding: 60px 0 28px 0;
+}
+
+footer img {
+    margin: 0 0 12px;
+    width: 100px;
+    height: 30px;
+    object-fit: cover;
+    transform: scale(1.5)
+}
+
+footer p {
+    color: white;
+    font-size: 1.8rem;
+}
+
+.mail-box {
+    margin-top: 20px;
+    display: inline-flex;
+    align-items: center;
+    background-color: white;
+}
+
+.mail-box__icon {
+    font-size: 2rem;
+    height: 100%;
+    color: white;
+    width: 64px;
+    padding: 16px 0;
+    background-color: var(--pink-text-color);
+}
+
+.mail-box form i {
+    padding: 0 20px 0 80px;
+    font-size: 1.6rem;
+    color: var(--gray-text-color)
+}
+
+form {
+    border-radius: 6px;
+    display: inline-block;
+}
+
+input[type='email'] {
+    padding: 16px 28px;
+    font-size: 1.5rem;
+    border: none;
+    outline: none;
+}
+
+.footer-socials i {
+    color: var(--gray-text-color);
+    font-size: 1.8rem;
+    padding: 16px 8px;
+}
+
+footer span {
+    color: var(--gray-text-color);
+    font-size: 1.5rem;
+}
+
+footer span a {
+    color: var(--pink-text-color);
+}
+
+/* back-to-top button */
+.back-to-top {
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    background: var(--pink-text-color);
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.9;
+    transition: opacity 0.5s ease 0s;
+}
+  
+.back-to-top:hover {
+    opacity: 1;
+}
+  
+.hidden {
+    opacity: 0%;
+}
+  
+.back-to-top-icon {
+    opacity: 1;
+    font-size: 1.6rem;
+    width: 16px;
+    height: 16px;
+    color: white;
+}
+
+.non-display {
+    display: none;
+}
+
+.display {
+    display: block;
+}
+
+/* Form */
+.form-box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.book-form {
+    position: fixed;
+    top: 17vh;
+    width: 28%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #edecec;
+    padding: 32px 0;
+    z-index: 10000;
+    transition: 0.5s linear;
+    transform: translateY(-150%);
+}
+
+.form-header {
+    width: 100%;
+    text-align: center;
+}
+
+.book-form i {
+    text-align: right;
+    position: absolute;
+    top: 18px;
+    font-size: 2rem;
+    color: var(--dark-bg-color);
+    right: 18px;
+}
+
+.book-form i:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.form-header h3 {
+    font-size: 2rem;
+    color: var(--dark-bg-color);
+    margin: 0 32px 16px;
+    text-align: center;
+}
+
+.form-field {
+    width: 100%;
+    margin: 0 32px 10px;
+}
+
+
+.form-field__label {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--dark-bg-color);
+}
+
+.form-field__input {
+    width: 100%;
+    font-size: 1.5rem;
+    border: none;
+    outline: none;
+    margin: 7px 0;
+    padding: 10px 14px;
+    border-radius: 6px;
+    box-shadow: rgb(221 221 221 / 13%) 0px 2px 8px 0px;
+}
+
+.form-overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    opacity: 0.8;
+    background-color: #131313;
+    display: none;
+}
+
+.send_book_btn {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: white;
+    background-color: var(--pink-text-color);
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    width: 100%;
+    margin: 24px 20px 6px;
+    padding: 12px;
+    text-align: center;
+}
+
+.send_book_btn:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.form-field:last-child {
+    display: flex;
+    align-items: center;
+}
+
+.form-field input[type='radio'] {
+    margin: 0;
+    margin-top: 2px
+}
+
+.form-field span {
+    padding: 0 12px 0 24px;
+    font-size: 1.4rem;
+}
