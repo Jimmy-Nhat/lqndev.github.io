@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>HCMC Museum</title>
+   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Hachi+Maru+Pop&family=Hubballi&family=Inter:wght@300;400;500;600;700;800&family=Kalam:wght@700&family=Montserrat:wght@254&family=Open+Sans:wght@326;379&family=Permanent+Marker&family=Poppins:wght@100&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,700&family=Rubik+Glitch&display=swap');
+    </style>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="../assets/css/base.css">
+   <link rel="stylesheet" href="../assets/css/exhibition.css">
+</head>
+<body>
+   <!-- Header section -->
+   <header>
+        <div class="header-intro">
+            <div class="header--left">
+                <div class="header--left__plan">
+                    <i class="fa-regular fa-clock"></i>
+                    <p>Plan your visit today: 9:00 AM - 7:00 PM</p>
+                </div>
+
+                <div class="header--left__direction">
+                    <i class="fa-regular fa-map"></i>
+                    <a href="../contact.html">Get direction</a>
+                </div>
+            </div>
+
+            <div class="header--right">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                <button href="#" class="book_btn1">TICKETS</button>
+            </div>
+        </div>
+ 
+       <div class="header-content">
+            <a href="../index.html" class="header-content__brand"> 
+                <img src="../assets/img/logo.png" alt="Museum Logo">
+                <div>
+                <p style="font-weight: 600;">HO CHI MINH MUSEUM</p>
+                <br>
+                <p style="font-size: 1.6rem;">Museum of Ho Chi Minh City</p>
+                </div>
+            </a>
+ 
+           <nav>
+               <ul class="nav-container">
+                   <li class="nav-item">
+                       <a href="../index.html" class="nav-item__link">Home</a>
+                   </li>
+                   <li class="nav-item">
+                       <a href="../about.html" class="nav-item__link">About</a>
+                   </li>
+                   <li class="nav-item">
+                       <a href="../exhibitions/exhibition.html" class="nav-item__link">Exhibitions</a>
+                   </li>
+                   <li class="nav-item">
+                       <a href="../education/education.html" class="nav-item__link">Education</a>
+                   </li>
+                   <li class="nav-item">
+                    <a href="../contact.html" class="nav-item__link">Contact</a>
+                </li>
+               </ul>
+           </nav>
+       </div>
+   </header>
+   
+
+   <!-- Main content -->
+   <main>
+        <div class="form-box">
+            <div class="form-overlay"></div>
+
+            <form action="../index.html" method="post" enctype="multipart/form-data" class="book-form">
+                <i class="fa-solid fa-xmark close-book-btn"></i>
+                
+                <div class="form-header">
+                    <h3>Book Tickets</h3>
+                </div>
+                
+                <div class="form-field">
+                    <label for="name" class="form-field__label">Name</label>
+                    <input type="text" class="form-field__input" name="name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-field">
+                    <label for="phone" class="form-field__label">Phone</label>
+                    <input type="text" class="form-field__input" name="phone" placeholder="Enter your phone number" required>
+                </div>
+                <div class="form-field">
+                    <label for="trip_date" class="form-field__label">Departure date</label>
+                    <input type="text" class="form-field__input" name="trip_date" placeholder="Enter your name" required>
+                </div>
+                <div class="form-field">
+                    <label for="trip_type" class="form-field__label">Visit as</label>
+                    <select name="type" id="trip_type" class="form-field__input" >
+                        <option value="">Individual</option>
+                        <option value="">Foreign visitors</option>
+                        <option value="">Educational organization</option>
+                    </select>
+                </div>
+                <div class="form-field">
+                    <label for="tour_guide" class="form-field__label">Tour guide service:</label>
+                    
+                    <span>Yes</span>
+                    <input type="radio" name="tour_guide" value="yes">
+                    <span>No</span>
+                    <input type="radio" name="tour_guide" value="no">
+                </div>
+                
+                <div class="send_book_btn">Send</div>
+            </form>
+        </div>
+        <section class="exhibition">
+            <div class="section-title">
+                <h3 class="sub-heading">EXHIBITIONS</H3>
+                <h2 class="heading">PROMINENT COLLECTIONS</h2>
+            </div>
+
+            <div class="breadcrumb">
+                <a href="../index.html">Homepage</a>
+                <span>/ Exhibitions</span>
+            </div>
+
+            <div class="exhibition-content">
+                <ul class="exhibition-content__category-container">
+                    <h1>Exhibition</h1>
+                    <li class="exhibition-content__category-item">
+                        <a href="upcoming-exhibitions.html">Upcoming exhibitions</a>
+                    </li>
+                    <li class="exhibition-content__category-item">
+                        <a href="online-exhibitions.html">Online exhibitions</a>
+                    </li>
+                    <li class="exhibition-content__category-item">
+                        <a href="permanent-display.html">Permanent display</a>
+                    </li>
+                </ul>
+
+                <ul class="exhibition-content-container">
+                    <a href="exhibition2.html" class="exhibition-content-item">
+                        <img src="../assets/img/img6.png" alt="">
+                        <div class="exhibition-content-item__details">
+                            <p>JUL 18 2021 - AUG 10 2022 <span><i class="fa-solid fa-eye"></i> 60</span></p>
+                            <h4>ARCHITECTURAL COLLECTIONS OF THE NGUYEN DYNASTY</h4>
+                            <p>Chewing betel nuts is a long-standing traditional custom of the Vietnamese people, showing the culture of communication and behavior, and is the language of expressing feelings between people through the betel which binds family’s intimacy and friendship. Apart from the Vietnamese, many ethnic groups in different regions, as well as ...</p>
+                        </div>
+                    </a>
+                    <a href="exhibition1.html" class="exhibition-content-item">
+                        <img src="../assets/img/img5.png" alt="">
+                        <div class="exhibition-content-item__details">
+                            <p>FEB 10 2022 - FEB 18 2022 <span><i class="fa-solid fa-eye"></i> 60</span></p>
+                            <h4>SPECIAL EXHIBITION: THE CULTURE OF BETEL AND ARECA</h4>
+                            <p>Chewing betel nuts is a long-standing traditional custom of the Vietnamese people, showing the culture of communication and behavior, and is the language of expressing feelings between people through the betel which binds family’s intimacy and friendship. Apart from the Vietnamese, many ethnic groups in different regions, as well as ...</p>
+                        </div>
+                    </a>
+                    <a href="exhibition2.html" class="exhibition-content-item">
+                        <img src="../assets/img/img4.png" alt="">
+                        <div class="exhibition-content-item__details">
+                            <p>OCT 18 2021 - NOV 10 2021 <span><i class="fa-solid fa-eye"></i> 60</span></p>
+                            <h4>WONDERFUL ARCHITECTURE BEFORE 1950S</h4>
+                            <p>Chewing betel nuts is a long-standing traditional custom of the Vietnamese people, showing the culture of communication and behavior, and is the language of expressing feelings between people through the betel which binds family’s intimacy and friendship. Apart from the Vietnamese, many ethnic groups in different regions, as well as ...</p>
+                        </div>
+                    </a>
+                    <a href="exhibition2.html" class="exhibition-content-item">
+                        <img src="../assets/img/img15.png" alt="">
+                        <div class="exhibition-content-item__details">
+                            <p>JUL 17 2011 - JUL 21 2021 <span><i class="fa-solid fa-eye"></i> 60</span></p>
+                            <h4>MODERN PAINTING EXHIBITION</h4>
+                            <p>Chewing betel nuts is a long-standing traditional custom of the Vietnamese people, showing the culture of communication and behavior, and is the language of expressing feelings between people through the betel which binds family’s intimacy and friendship. Apart from the Vietnamese, many ethnic groups in different regions, as well as ...</p>
+                        </div>
+                    </a>
+
+                    <ul class="pagination-container">
+                        <li class="pagination-item">
+                            <a href="">1</a>
+                        </li>
+                        <li class="pagination-item">
+                            <a href="">2</a>
+                        </li>
+                        <li class="pagination-item">
+                            <a href="">3</a>
+                        </li>
+                        <li class="pagination-item">
+                            <a href="">4</a>
+                        </li>
+                    </ul>
+                </ul>
+            </div>
+        </section>
+
+   </main>
+
+
+   <!-- Footer section -->
+   <footer>
+        <img src="../assets/img/logo.png" alt="">
+        <p style="font-weight: 600;">HO CHI MINH MUSEUM</p>
+        <p style="font-size: 1.6rem;">Museum of Ho Chi Minh City</p>
+
+        <div class="mail-box">
+            <div class="mail-box__icon">
+                <i class="fa-solid fa-envelope-open-text"></i>
+            </div>
+            <form action="../index.html" method="post">
+                <input type="email" name="email_address" placeholder="Enter your email address">
+                <i class="fa-solid fa-arrow-right-long"></i>
+                <input type="submit" value="submit" style="display: none;">
+            </form>
+        </div>
+
+        <div class="footer-socials">
+            <a href="">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+        </div>
+
+        <span>Copyrights <i class="fa-regular fa-copyright"></i> 2022
+            <a href="../index.html">HCMCMuseum</a>  . All rights reserved.
+        </span>
+   </footer>
+
+    <!-- Back-to-top button -->
+    <button class="back-to-top hidden">
+        <i class="fa-solid fa-angle-up back-to-top-icon"></i>
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 11l5-5m0 0l5 5m-5-5v12" />
+      </svg>
+    </button>
+
+   <script>
+        var leftAngelBtn = document.querySelector('.angle-left-icon');
+        var rightAngelBtn = document.querySelector('.angle-right-icon');
+        var slides = document.querySelectorAll('.education-content-item')
+
+
+
+
+   </script>
+
+   <!-- Back-to-top JS -->
+   <script>
+    const showOnPx = 100;
+    const backToTopButton = document.querySelector(".back-to-top");
+    const scrollContainer = () => {
+    return document.documentElement || document.body;
+    };
+
+    const goToTop = () => {
+    document.body.scrollIntoView({
+        behavior: "smooth"
+    });
+    };
+
+    document.addEventListener("scroll", () => {
+    // console.log("Scroll Height: ", scrollContainer().scrollHeight);
+    // console.log("Client Height: ", scrollContainer().clientHeight);
+
+    const scrolledPercentage =
+        (scrollContainer().scrollTop /
+         (scrollContainer().scrollHeight - scrollContainer().clientHeight)) *100;
+
+    if (scrollContainer().scrollTop > showOnPx) {
+     backToTopButton.classList.remove("hidden");
+     } else {
+     backToTopButton.classList.add("hidden");
+     }
+    }
+    );
+
+    backToTopButton.addEventListener("click", goToTop);
+</script>
+
+    <!-- Book tickets -->
+    <script src="../assets/js/book_tickets.js"></script>
+
+</body>
+</html>
